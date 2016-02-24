@@ -1,6 +1,6 @@
 package tubes_pbo;
 
-public class TUBES_PBO {
+public class Main {
     public static void main(String[] args) {
         
     }
