@@ -1,17 +1,18 @@
 package tubes_pbo;
 
 public class Pelamar extends Orang {
-    private Berkas[] berkas;
+    private BerkasLamaran[] berkas;
+    private int jumlahBerkas;
     
     public Pelamar(String nama) {
         super(nama);
     }
     
-    public void setBerkas(Berkas berkas) {
-        this.berkas = berkas;
+    public void setBerkas(BerkasLamaran berkas) {
+        this.berkas[jumlahBerkas] = berkas;
     }
     
-    public Berkas getBerkas() {
-        return berkas;
+    public BerkasLamaran getBerkas(int n) {
+        return berkas[n];
     }
 }
