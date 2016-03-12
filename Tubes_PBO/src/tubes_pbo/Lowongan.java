@@ -25,7 +25,7 @@ public class Lowongan {
      
     }
     
-    public String getNamaLowonga(){
+    public String getNamaLowongan(){
         return this.namaLowongan;
     }
     
