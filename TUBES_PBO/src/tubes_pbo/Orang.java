@@ -4,6 +4,8 @@ public class Orang {
     private String nama;
     private String username;
     private String password;
+    private int nomorTelefon;
+    private String alamat;
     
     public Orang(String nama) {
         this.nama = nama;
@@ -31,6 +33,22 @@ public class Orang {
     
     public String getPassword() {
         return password;
+    }
+    
+    public void setNomorTelefon(int nomorTelefon) {
+        this.nomorTelefon = nomorTelefon;
+    }
+    
+    public int getNomorTelefon() {
+        return nomorTelefon;
+    }
+    
+    public void setAlamat(String alamat) {
+        this.alamat = alamat;
+    }
+    
+    public String getAlamat() {
+        return alamat;
     }
     
     public int login(String username, String password) {
