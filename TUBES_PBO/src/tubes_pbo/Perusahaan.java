@@ -7,6 +7,10 @@ public class Perusahaan extends Orang {
     public Perusahaan(String nama) {
         super(nama);
     }
+
+    public void setLowongan(Lowongan lowongan) {
+        this.lowongan = lowongan;
+    }
     
     public Lowongan getLowongan() {
         return lowongan;

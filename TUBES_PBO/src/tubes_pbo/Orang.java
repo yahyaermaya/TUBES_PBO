@@ -4,7 +4,7 @@ public class Orang {
     private String nama;
     private String username;
     private String password;
-    private int nomorTelefon;
+    private int nomorTelepon;
     private String alamat;
     
     public Orang(String nama) {
@@ -36,11 +36,11 @@ public class Orang {
     }
     
     public void setNomorTelefon(int nomorTelefon) {
-        this.nomorTelefon = nomorTelefon;
+        this.nomorTelepon = nomorTelefon;
     }
     
-    public int getNomorTelefon() {
-        return nomorTelefon;
+    public int getNomorTelepon() {
+        return nomorTelepon;
     }
     
     public void setAlamat(String alamat) {
