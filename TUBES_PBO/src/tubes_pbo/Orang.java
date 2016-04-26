@@ -35,8 +35,8 @@ public class Orang {
         return password;
     }
     
-    public void setNomorTelefon(int nomorTelefon) {
-        this.nomorTelepon = nomorTelefon;
+    public void setNomorTelepon(int nomorTelepon) {
+        this.nomorTelepon = nomorTelepon;
     }
     
     public int getNomorTelepon() {

@@ -1,9 +1,9 @@
 package tubes_pbo;
 
 public class Lowongan {
-    public String namaLowongan;
-    public String[] syarat;
-    public int jumlahSyarat;
+    private String namaLowongan;
+    private String[] syarat;
+    private int jumlahSyarat;
     
     public Lowongan(String namaLowongan){
         this.namaLowongan = namaLowongan;
