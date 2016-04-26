@@ -15,15 +15,13 @@ public class ControllerTambahPelamar implements ActionListener {
         this.app= app;            
         this.tambahpelamar = new TambahPelamar();
         this.tambahpelamar.setVisible(true);
-        this.tambahpelamar.getTambahButton().addActionListener(this);
         this.tambahpelamar.getBackButtonMainMenu().addActionListener(this);
-
+        this.tambahpelamar.getTambahButton().addActionListener(this);
     }
 
     @Override
     public void actionPerformed(ActionEvent ae) {
         Object x = ae.getSource();
-
         if (x.equals(tambahpelamar.getTambahButton())) {
             String namaPelamar = tambahpelamar.getNamaPelamar().getText();
             app.setPel(new Pelamar(namaPelamar));

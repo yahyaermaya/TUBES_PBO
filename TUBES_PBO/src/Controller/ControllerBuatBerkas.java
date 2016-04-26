@@ -24,11 +24,13 @@ public class ControllerBuatBerkas implements ActionListener{
     public void actionPerformed(ActionEvent ae) {
         Object x = ae.getSource();
         if(x.equals(tl.getBtnBuatBerkas())){
+            this.tl.setVisible(false);
             String namaBerkas = tl.getNamaBerkas().getText();
             app.getPel(0).setBerkas(new BerkasLamaran(namaBerkas));
             JOptionPane.showMessageDialog(null, "BERHASIL!");
         }
         else if(x.equals(tl.getBtnHalAwal())){
+            this.tl.setVisible(false);
             ControllerMainMenu cp = new ControllerMainMenu(app);
         }
     }

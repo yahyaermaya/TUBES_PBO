@@ -67,12 +67,12 @@ public class TambahPerusahaan extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(backButtonMainMenu, javax.swing.GroupLayout.PREFERRED_SIZE, 239, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(backButtonMainMenu, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(tambahButton)
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(namaPerusahaanText)
                         .addGap(18, 18, 18)
-                        .addComponent(namaPerusahaan)))
+                        .addComponent(namaPerusahaan, javax.swing.GroupLayout.DEFAULT_SIZE, 161, Short.MAX_VALUE)))
                 .addContainerGap())
         );
         layout.setVerticalGroup(

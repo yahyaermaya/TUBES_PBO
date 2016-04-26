@@ -28,7 +28,10 @@ public class ControllerMainMenu implements ActionListener {
             ControllerHalAwalPerusahaan cp = new ControllerHalAwalPerusahaan(app);
             
         }
-
+        else if(x.equals(mainmenu.getPelamar())){
+            this.mainmenu.setVisible(false);
+            ControllerHalAwalPelamar cp = new ControllerHalAwalPelamar(app);
+        }
     }
 
 }

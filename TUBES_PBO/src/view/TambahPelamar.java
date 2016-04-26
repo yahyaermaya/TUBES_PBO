@@ -1,9 +1,30 @@
-package View;
+package view;
+
+import java.awt.event.ActionListener;
+import javax.swing.JButton;
+import javax.swing.JTextField;
 
 public class TambahPelamar extends javax.swing.JFrame {
 
     public TambahPelamar() {
         initComponents();
+    }
+
+    public JButton getBackButtonMainMenu() {
+        return backButtonMainMenu;
+    }
+
+    public JTextField getNamaPelamar() {
+        return namaPelamar;
+    }
+
+    public JButton getTambahButton() {
+        return tambahButton;
+    }
+    
+    public void addListener(ActionListener e){
+        backButtonMainMenu.addActionListener(e);
+        tambahButton.addActionListener(e);
     }
 
     /**
@@ -15,40 +36,23 @@ public class TambahPelamar extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        buttonPelamar = new javax.swing.JButton();
-        jLabel3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        jLabel5 = new javax.swing.JLabel();
-        jLabel6 = new javax.swing.JLabel();
-        idPelamar = new javax.swing.JTextField();
+        backButtonMainMenu = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
         namaPelamar = new javax.swing.JTextField();
-        nmrHp = new javax.swing.JTextField();
-        passwordPelamar = new javax.swing.JTextField();
-        buttonAdd = new javax.swing.JButton();
-        buttonBack = new javax.swing.JButton();
-
-        buttonPelamar.setText("Menu Pelamar");
+        tambahButton = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-        setTitle("Tambah Pelamar");
 
-        jLabel3.setText("Id Pelamar");
-
-        jLabel4.setText("Nama Pelamar");
-
-        jLabel5.setText("Nomor Handphone");
-
-        jLabel6.setText("Password");
-
-        idPelamar.addActionListener(new java.awt.event.ActionListener() {
+        backButtonMainMenu.setText("Kembali Ke Main Menu");
+        backButtonMainMenu.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                idPelamarActionPerformed(evt);
+                backButtonMainMenuActionPerformed(evt);
             }
         });
 
-        buttonAdd.setText("Tambah");
+        jLabel1.setText("Nama Pelamar");
 
-        buttonBack.setText("Kembali ke Halaman Awal");
+        tambahButton.setText("Tambah");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -57,67 +61,46 @@ public class TambahPelamar extends javax.swing.JFrame {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel6)
-                    .addComponent(buttonBack)
+                    .addComponent(backButtonMainMenu, javax.swing.GroupLayout.DEFAULT_SIZE, 286, Short.MAX_VALUE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jLabel3)
-                            .addComponent(jLabel4)
-                            .addComponent(jLabel5))
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(nmrHp, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(namaPelamar, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(idPelamar, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(passwordPelamar, javax.swing.GroupLayout.PREFERRED_SIZE, 179, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addComponent(buttonAdd))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addComponent(jLabel1)
+                        .addGap(18, 18, 18)
+                        .addComponent(namaPelamar))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(tambahButton)
+                        .addGap(0, 0, Short.MAX_VALUE)))
+                .addContainerGap())
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(buttonBack)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(backButtonMainMenu)
+                .addGap(54, 54, 54)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel3)
-                    .addComponent(idPelamar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4)
+                    .addComponent(jLabel1)
                     .addComponent(namaPelamar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel5)
-                    .addComponent(nmrHp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(3, 3, 3)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel6)
-                    .addComponent(passwordPelamar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(buttonAdd)
-                .addContainerGap(21, Short.MAX_VALUE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 56, Short.MAX_VALUE)
+                .addComponent(tambahButton)
+                .addContainerGap())
         );
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
-    private void idPelamarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_idPelamarActionPerformed
+    private void backButtonMainMenuActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_backButtonMainMenuActionPerformed
         // TODO add your handling code here:
-    }//GEN-LAST:event_idPelamarActionPerformed
+    }//GEN-LAST:event_backButtonMainMenuActionPerformed
 
+    /**
+     * @param args the command line arguments
+     */
+    
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton buttonAdd;
-    private javax.swing.JButton buttonBack;
-    private javax.swing.JButton buttonPelamar;
-    private javax.swing.JTextField idPelamar;
-    private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel4;
-    private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
+    private javax.swing.JButton backButtonMainMenu;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JTextField namaPelamar;
-    private javax.swing.JTextField nmrHp;
-    private javax.swing.JTextField passwordPelamar;
+    private javax.swing.JButton tambahButton;
     // End of variables declaration//GEN-END:variables
 }
